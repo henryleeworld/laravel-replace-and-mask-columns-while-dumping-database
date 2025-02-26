@@ -1,4 +1,4 @@
-# Laravel 8 備份資料庫時取代和遮罩敏感性欄位
+# Laravel 10 備份資料庫時取代和遮罩敏感性欄位
 
 引入 beyondcode 的 laravel-masked-db-dump 套件來擴增備份資料庫時取代和遮罩敏感性欄位，藉此協助防止未經授權存取敏感性資料，讓資料庫中的敏感性資料獲得更妥善的保護。
 
@@ -22,10 +22,10 @@ $ php artisan migrate --seed
 ```
 - 執行 __Artisan__ 指令的 __db:masked-dump__ 來執行備份資料庫，並同時取代和遮罩敏感性欄位。
 ```sh
-$ php artisan db:masked-dump {匯出檔案名稱}.sql
+$ php artisan db:masked-dump {匯出檔案名稱}.sql {--gzip}
 ```
 
 ----
 ## 畫面截圖
-![](https://i.imgur.com/Az3rmln.png)
+![](https://i.imgur.com/Lv778R2.png)
 > 防止不該存取資料的使用者檢視該資料
